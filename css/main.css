@@ -1,10 +1,11 @@
 body {
-  background: #614977;
+  background: url(../img/01.png) no-repeat center / cover;
   font-family: "Bitter", serif;
 }
 
 * {
   box-sizing: border-box;
+  
 }
 
 .icon {
@@ -65,7 +66,7 @@ body {
   height: 300px;
   margin-left: -70px;
   flex-shrink: 0;
-  position: relative;
+  position:relative;
   z-index: 2;
   border-radius: 15px;
   z-index: 1;
@@ -74,8 +75,8 @@ body {
   .player-cover {
     margin-top: -70px;
     margin-bottom: 25px;
-    width: 290px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -385,4 +386,11 @@ body {
   opacity: 0;
 }
 
+@font-face {
+  font-family: klondak;
+  src: url(klondak2.ttf);
+}
 
+div {
+  font-family: klondak;
+}

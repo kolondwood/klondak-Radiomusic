@@ -10,7 +10,31 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "lofi",
+          name: "Non Stop Pop Radio",
+          artist: "Fakedak Radio",
+          cover: "./04.jpg",
+          source: "https://radio.bardia.cloud/;?type=http&nocache=4",
+          url: "https://radio.bardia.cloud/;?type=http&nocache=4",
+          favorited: false,
+        },
+        {
+          name: "Hip-Hop R&B",
+          artist: "Fakedak Radio",
+          cover: "./05.jpg",
+          source: "https://mikrotik.bardia.tech/;?type=http&nocache=4",
+          url: "https://mikrotik.bardia.tech/;?type=http&nocache=4",
+          favorited: false,
+        },
+        {
+          name: "Autumn Chill",
+          artist: "Fakedak Radio",
+          cover: "./03.jpg",
+          source: "https://radio.bardia.tech/;?type=http&nocache=2262",
+          url: "https://radio.bardia.tech/;?type=http&nocache=2262",
+          favorited: false,
+        },
+        {
+          name: "Lo-Fi Chill and Relax",
           artist: "Fakedak Radio",
           cover: "./01.jpg",
           source: "https://shoutcast.bardia.cloud/;?type=http&nocache=2262",
@@ -40,6 +64,9 @@ new Vue({
         this.audio.pause();
         this.isTimerPlaying = false;
       }
+    },
+    var() {
+      volume = audio.volume;
     },
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
